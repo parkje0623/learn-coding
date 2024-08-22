@@ -2,6 +2,7 @@ import Head from 'next/head';
 import ContentList from '../components/ContentList';
 
 function ViewLanguage() {
+    const retrieve_language = "SELECT id, name, description FROM language";
     return (
         <>
             <Head>
@@ -9,7 +10,7 @@ function ViewLanguage() {
                 <meta name="description" content="List of Programming Languages" />
             </Head>
             <main>
-                {/* <ContentList content={content} /> */}
+                <ContentList sql_command={retrieve_language} />
             </main>
         </>
     )

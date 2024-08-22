@@ -1,9 +1,13 @@
-function ContentList({ content }) {
+import { sql } from "@vercel/postgres";
+
+export default async function ContentList(sql_command) {
+    const { rows } = await sql`${sql_command}`;
+
     return (
         <div className='content-list'>
-            { content
+            { rows
                 ? <ul>
-                    {content.map(row => (
+                    {rows.map(row => (
                         <li key={row.id}>
                             <h3>{row.name}</h3>
                             <p>{row.description}</p>
@@ -14,6 +18,5 @@ function ContentList({ content }) {
             }
         </div>
     );
-}
+};
 
-export default ContentList;
