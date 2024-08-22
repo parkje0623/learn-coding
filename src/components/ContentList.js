@@ -10,7 +10,7 @@ function ContentList({ content }) {
                         </li>
                     ))}
                 </ul>
-                : <h2>No Content Available...</h2>
+                : <h2>No Contents Available...</h2>
             }
         </div>
     );
