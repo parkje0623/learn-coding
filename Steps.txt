@@ -1,0 +1,42 @@
+React Web application
+ - Learning application: Covering HTML/CSS, JavaScript, React, Python
+ - Sections: Lessons, Exercises, Quizzes
+ - Login: implemented later
+
+
+Steps:
+ - npx create-next-app@latest learn-code-hub
+
+Vercel Postgres Connection:
+ - vercel link
+ - vercel env pull .env.development.local
+ - npm install @vercel/postgres
+
+Vercel Commands:
+ -  import { sql } from "@vercel/postgres";
+
+    export default async function Cart({ params }) {
+    const { rows } = await sql`SELECT * from CARTS where user_id=${params.user}`;
+
+    return (
+        <div>
+        {rows.map((row) => (
+            <div key={row.id}>
+            {row.id} - {row.quantity}
+            </div>
+        ))}
+        </div>
+    );
+    }
+
+
+Github:
+ - git init
+ - git add .
+ - git commit -m "COMMENT_HERE"
+ - git branch -M main
+ - git remote add origin https://github.com/parkje0623/learn-coding.git
+ - git push -u origin main
+
+Testing:
+ - npm run dev

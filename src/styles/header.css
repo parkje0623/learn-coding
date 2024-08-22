@@ -1,0 +1,83 @@
+/* Header.css */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav ul li {
+    margin: 0 10px;
+}
+  
+nav a {
+    color: #fff;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+  
+nav a:hover {
+    background: #0056b3;
+    border-radius: 4px;
+}
+  
+.dropdown {
+    position: relative;
+    transition: background 0.3s ease;
+}
+  
+.dropdown-label {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+  
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-label:hover {
+    background: #0056b3;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.dropdown:hover ul {
+    display: block;
+}
+  
+.dropdown ul li {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    color: #000000;
+    border-bottom: 1px solid #ddd;
+}
+  
+.dropdown ul li:hover {
+    background: #f4f4f4;
+    cursor: pointer;
+}
