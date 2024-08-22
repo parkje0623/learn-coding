@@ -1,8 +1,18 @@
 import Head from 'next/head';
 import ContentList from '../components/ContentList';
+import { sql } from '@vercel/postgres';
 
-function ViewLanguage() {
-    const retrieve_language = "SELECT id, name, description FROM language";
+export async function getServerSideProps() {
+    const { rows } = await sql`SELECT id, name, description FROM language`;
+
+    return {
+        props: {
+            content: rows,
+        },
+    };
+}
+
+function ViewLanguage({ content }) {
     return (
         <>
             <Head>
@@ -10,7 +20,7 @@ function ViewLanguage() {
                 <meta name="description" content="List of Programming Languages" />
             </Head>
             <main>
-                <ContentList sql_command={retrieve_language} />
+                <ContentList content={content} />
             </main>
         </>
     )
