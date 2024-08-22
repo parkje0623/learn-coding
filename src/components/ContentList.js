@@ -1,7 +1,7 @@
 function ContentList({ content }) {
     return (
         <div className='content-list'>
-            { content.length > 0 
+            { content
                 ? <ul>
                     {content.map(row => (
                         <li key={row.id}>

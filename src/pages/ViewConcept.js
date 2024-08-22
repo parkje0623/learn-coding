@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import ContentList from '../components/ContentList';
+// import Head from 'next/head';
+// import ContentList from '../components/ContentList';
 
-function ViewConcept() {
-    return (
-        <ContentList table="concepts" />
-    )
-}
+// function ViewConcept() {
+//     return (
+//         <ContentList table="concepts" />
+//     )
+// }
 
-export default ViewConcept;
+// export default ViewConcept;
