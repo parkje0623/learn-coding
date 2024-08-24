@@ -22,13 +22,13 @@ nav ul li {
     margin: 0 10px;
 }
   
-nav a :not(.dropdown ul) {
+nav a:not(.dropdown a) {
     color: #fff;
     padding: 5px 10px;
     transition: background 0.3s ease;
 }
   
-nav a:hover :not(.dropdown ul) {
+nav a:hover:not(.dropdown a) {
     background: #0056b3;
     border-radius: 4px;
 }
