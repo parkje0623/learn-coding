@@ -4,7 +4,7 @@ import '../styles/header.css';
 function Header() {
     return (
         <header>
-            <h1>Code Learn Hub</h1>
+            <h1><Link href="/">Code Learn Hub</Link></h1>
             <nav>
                 <ul>
                     <li className="dropdown">

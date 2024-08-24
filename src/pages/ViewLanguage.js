@@ -3,16 +3,28 @@ import ContentList from '../components/ContentList';
 import { sql } from '@vercel/postgres';
 
 export async function getServerSideProps() {
-    const { rows } = await sql`SELECT id, name, description FROM language`;
+    try {
+        const { rows } = await sql`SELECT id, name, description FROM language`;
 
-    return {
-        props: {
-            content: rows,
-        },
-    };
+        return {
+            props: {
+                content: rows,
+            },
+        };
+    } catch (error) {
+        console.error("Error fetching language data:", error);
+        return {
+            props: {
+                content: [],
+                error: "Failed to fetch language data. Please try again later.",
+            },
+        };
+    }
 }
 
 function ViewLanguage({ content }) {
+    const section = "language";
+
     return (
         <>
             <Head>
@@ -20,7 +32,7 @@ function ViewLanguage({ content }) {
                 <meta name="description" content="List of Programming Languages" />
             </Head>
             <main>
-                <ContentList content={content} />
+                <ContentList contents={content} section={section} />
             </main>
         </>
     )
