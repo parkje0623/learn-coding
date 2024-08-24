@@ -8,10 +8,20 @@ function Header() {
             <nav>
                 <ul>
                     <li className="dropdown">
-                        <Dropdown label="Language" options={['Python', 'HTML', 'CSS', 'JavaScript', 'React']} />
+                        <Dropdown label="Language" options={[
+                            { name: 'Python', path: '/ViewLanguage/1-Python'},
+                            { name: 'HTML', path: '/ViewLanguage/2-HTML'},
+                            { name: 'CSS', path: '/ViewLanguage/3-CSS'},
+                            { name: 'JavaScript', path: '/ViewLanguage/4-JavaScript'},
+                            { name: 'React', path: '/ViewLanguage/5-React'}
+                        ]} />
                     </li>
                     <li className="dropdown">
-                        <Dropdown label="Concept" options={['Database', 'Algorithms', 'Data Structures']} />
+                        <Dropdown label="Concept" options={[
+                            { name: 'Database', path: '/ViewConcept/1-Database'},
+                            { name: 'Algorithms', path: '/ViewConcept/2-Algorithms'},
+                            { name: 'Data Structures', path: '/ViewConcept/3-Data Structures'}
+                        ]} />
                     </li>
                     <li>
                         <Link href="/signup">Sign Up</Link>
@@ -31,7 +41,11 @@ function Dropdown({label, options}) {
             <span className="common-font dropdown-label">{label}</span>
             <ul>
                 {options.map(option => (
-                    <li key={option}>{option}</li>
+                    <li key={option.name}>
+                        <Link href={option.path}>
+                            {option.name}
+                        </Link>
+                    </li>
                 ))}
             </ul>
         </div>
