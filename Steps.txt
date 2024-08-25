@@ -6,6 +6,7 @@ React Web application
 
 Steps:
  - npx create-next-app@latest learn-code-hub
+ - npm install react-icons # for React Icons
 
 Vercel Postgres Connection:
  - vercel link

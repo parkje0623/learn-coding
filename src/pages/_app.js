@@ -4,11 +4,13 @@ import Footer from '../components/Footer'; // Import a footer component
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <div className='app-container'>
       <Header /> {/* Render header on every page */}
-      <Component {...pageProps} /> {/* Render the page component */}
+      <main>
+        <Component {...pageProps} /> {/* Render the page component */}
+      </main>
       <Footer /> {/* Render footer on every page */}
-    </>
+    </div>
   );
 }
 

@@ -12,7 +12,7 @@ import '../styles/home.css';
 
 function HomePage() {
   return (
-    <div>
+    <div className='app-container'>
       <Head>
         <title>Code Learn Hub</title>
         <meta name="description" content="Welcome to the home page" />
