@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #dropdown ul ul {
+                display: none; /* Hides dropdown menu by default */
+                position: absolute; /* Positions dropdown relative to parent */
+            }
+
+            #dropdown ul li:hover > ul, 
+            #dropdown li:focus-within > ul {
+                /* li:focus-within > ul -> 
+                    Handles Keyboard navigation for dropdown */
+                display: block; 
+            }
+        </style>
+    </head>
+    <body>  
+        <nav id="dropdown" aria-label="Main Navigation">
+            <!-- If used tool like Chromevox, it will readout
+                    "Main Navigation ..." -->
+            <h4>Dropdown Nav (Try pressing Tab on keyboard)</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="services.html">Services</a>
+                <ul>
+                  <li><a href="web-design.html">Web Design</a></li>
+                  <li><a href="marketing.html">Marketing</a></li>
+                </ul>
+              </li>
+            </ul>
+        </nav>
+    </body>
+</html>

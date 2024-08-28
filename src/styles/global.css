@@ -32,3 +32,27 @@ a {
 button {
     cursor: pointer;
 }
+
+
+/* Back button styling */
+.back-button, .home-container-buttons button {
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.back-button:hover, .home-container-buttons button:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.back-button svg {
+    margin-right: 8px; /* Space between icon and text */
+}

@@ -41,3 +41,9 @@ Github:
 
 Testing:
  - npm run dev
+
+
+
+ JSON FILE:
+  - Make sure ';' are bullet points
+  - '\n' are new line

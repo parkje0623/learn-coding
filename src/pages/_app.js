@@ -1,15 +1,16 @@
 import '../styles/global.css'; // Import global CSS
-import Header from '../components/Header'; // Import a header component
-import Footer from '../components/Footer'; // Import a footer component
+import Layout from '@/components/Layout';
 
 function MyApp({ Component, pageProps }) {
+  // Check if the current page wants to hide the header and footer
+  const noHeaderFooter = Component.noHeaderFooter || false;
+
   return (
     <div className='app-container'>
-      <Header /> {/* Render header on every page */}
-      <main>
-        <Component {...pageProps} /> {/* Render the page component */}
-      </main>
-      <Footer /> {/* Render footer on every page */}
+      {/* To be rendered to every page */}
+      <Layout noHeaderFooter={noHeaderFooter}>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }

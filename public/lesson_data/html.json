@@ -1,0 +1,364 @@
+{
+    "lessons": [
+        {
+            "contentId": 10,
+            "conentName": "Introduction to HTML",
+            "sections": [
+                {
+                    "lessonNumber": 1,
+                    "lessonName": "Overview of HTML",
+                    "content": [
+                        {
+                            "subtopic":"What is HTML?",
+                            "description":"HTML (HyperText Markup Language) is the standard language used to create web pages. It allows you to structure content such as text, images, and links, and is the foundation upon which all web content is built.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Role in Web Development",
+                            "description":"HTML is essential in web development as it provides the basic structure of web pages. While HTML focuses on the content and structure, CSS (Cascading Style Sheets) is used for styling, and JavaScript adds dynamic behavior to web pages.",
+                            "resource": ""
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 2,
+                    "lessonName": "Basic HTML Syntax",
+                    "content": [
+                        {
+                            "subtopic":"",
+                            "description":"HTML documents are made up of elements, which are defined by tags. Tags are keywords enclosed in angle brackets, like `<p>` for a paragraph.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Elements and Tags",
+                            "description":"Most HTML elements have an opening tag `<p>` and a closing tag `</p>` (tag name with a slash). The content in between these tags is the element's content.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Attributes",
+                            "description":"Attributes provide additional information about HTML elements. They are always included in the opening tag and have a name and value format. \nFor example) <p class='paragraph'>Hello World!</p>; `class` is the attribute name; `paragraph` is the attribute value.",
+                            "resource": ""
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 3,
+                    "lessonName": "Creating Your First Web Page",
+                    "content": [
+                        {
+                            "subtopic":"1. Start with the `<!DOCTYPE html>` declaration",
+                            "description":"This declaration defines the document type and version of HTML. It ensures that the browser renders the page correctly.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"2. Add the root `<html>` element",
+                            "description":"The `<html>` tag is the root of an HTML document. All other elements are nested inside this tag.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"3. Include the `<head>` section",
+                            "description":"The `<head>` section contains metadata about the HTML document, such as the title and linked resources.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"4. Add the `<body>` section",
+                            "description":"The `<body>` tag contains the content of the web page that is visible to users, such as text, images, and links",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"5. Full HTML Document Example",
+                            "description":"Here is a complete example of a simple HTML document.",
+                            "resource": "intro_first_web.html"
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 4,
+                    "lessonName": "Basic HTML Tags",
+                    "content": [
+                        {
+                            "subtopic":"",
+                            "description":"Here are some essential HTML tags to get started: `<html>` - The root element that contains all other elements, `<head>` - Contains metadata and links to scripts, styles, and more, `<body>` - Contains all the content that is visible to the user, `<h1> to <h6>` - Defines HTML headings (varies in font size)",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"",
+                            "description":"",
+                            "resource": ""
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 5,
+                    "lessonName": "HTML Document Structure",
+                    "content": [
+                        {
+                            "subtopic":"Importance of Document Structure",
+                            "description":"A well-structured HTML document helps browsers and search engines understand and interpret the content correctly. Proper structure is also crucial for accessibility and SEO (Search Engine Optimization).",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Upcoming Lessons",
+                            "description":"In future lessons, we'll delve deeper into HTML document structure, covering topics such as nested elements, semantic HTML, and best practices for writing clean and maintainable code.",
+                            "resource": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contentId": 11,
+            "conentName": "HTML Document Structure",
+            "sections": [
+                {
+                    "lessonNumber": 1,
+                    "lessonName": "Detailed Structure of an HTML Document",
+                    "content": [
+                        {
+                            "subtopic":"Understanding the Basic Structure",
+                            "description":"An HTML document is structured into two main sections: the `<head>` and the `<body>`, all contained within the root `<html>` element. This structure is essential for defining both the content and metadata of a web page.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"The `<html>` Element",
+                            "description":"The `<html>` tag is the root of an HTML document. It wraps all the content and metadata, signaling the beginning and end of the HTML document.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"The `<head>` Element",
+                            "description":"The `<head>` element contains meta-information about the document that is not displayed directly on the webpage. It includes metadata, links to stylesheets and scripts, and other information that helps browsers understand how to render the page.\n Key components of the `<head>` element:;`<title>`: Specifies the title of the webpage, shown on the broswer tab; `<meta>`: Provides metadata such as character set, author, description, and viewport settings.; `<link>`: Links external resources like stylesheets (CSS), Google Font API, etc.; `<style>`: Contains internal CSS (styles for the document); `<scripts>`: Contains JavaScript code or links to external JavaScript files.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"The `<body>` Element",
+                            "description":"The `<body>` element contains all the visible content of a webpage, including text, images, links, and other visuals. Everything that is displayed to the user is nested within this element.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Example",
+                            "description":"Enter below to view the HTML document structure:",
+                            "resource":"html_document_structure.html"
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 2,
+                    "lessonName": "Doctype Declaration",
+                    "content": [
+                        {
+                            "subtopic":"What is the Doctype Declaration?",
+                            "description":"The doctype declaration `<!DOCTYPE html>` is the very first line in an HTML document. It tells the browser what version of HTML the page is written in, ensuring that it is displayed correctly.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Purpose of Doctype Declaration",
+                            "description":";Specifies HTML Version: Informs the browser that the document is written in HTML5, the latest version.; Ensures Standard Rendering: Helps the browser render the document in standards mode, reducing inconsistencies across different browsers.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Usage",
+                            "description":"The doctype declaration is simple and should be at the very top of your HTML document, before the `<html>` element.",
+                            "resource": ""
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 3,
+                    "lessonName": "Nesting Elements",
+                    "content": [
+                        {
+                            "subtopic":"What is Nesting?",
+                            "description":"Nesting refers to placing HTML elements inside other elements, creating a hierarchical structure. Proper nesting ensures that the HTML document is well-formed and easy to read and maintain.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Rules of Proper Nesting",
+                            "description":";Opening & Closing Tags: Most elements require opening tag `<tag_name>` which must have a corresponding closing tag `</tag_name>`.; Empty Tag: Some elements do not require a closing tag because it can't have any child element (i.e., <img>); Nested Elements Must Be Closed in Reverse Order: If an element is opended inside another element, it should be closed before the outer element.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Common Nesting Mistakes",
+                            "description":";1. Incorrect Nesting: Closing tags in the wrong order can lead to rendering errors.; 2. Missing Closing Tags:  Not closing an element can break the structure of the document.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Using Indentation for Readability",
+                            "description":"Indentation is crucial for making HTML code readable and maintainable. Indent nested elements consistently to reflect their structure. \n Enter below for proper indentation example:",
+                            "resource": "html_nesting.html"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contentId": 12,
+            "conentName": "Text Formatting and Layout",
+            "sections": [
+                {
+                    "lessonNumber": 1,
+                    "lessonName": "Headings, Paragraphs, and Lists",
+                    "content": [
+                        {
+                            "subtopic":"Headings (`<h1>` to `<h6>`)",
+                            "description":"Headings are used to define the structure and hierarchy of a webpage's content. HTML provides six levels of headings from `<h1>` (most important) to `<h6>` (least important). Search engines and screen readers use these headings to understand the content structure, making them cruicial for accessibility and SEO.; `<h1>`: Main heading, usually used for the page title (only one per page); `<h2>`: Sub-heading, typically used for section titles.; `<h3>` to `<h6>`: Used for further sub-headings, creating a structured and nested content hierarchy.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Paragraphs (`<p>`)",
+                            "description":"The `<p>` tag is used to define paragraphs of text, which are blocks of content separated by a line break and some space.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Lists",
+                            "description":"Lists are used to group related items together. HTML supports three types of lists:; Unordered Lists (`<ul>`): Used for a list of items where the order does not matter.; Ordered Lists (`<ol>`): Used for a list of items where the order is important.; Description Lists (`<dl>`): Used for listing termrs and their descriptions.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Best Practices for Using Headings, Paragraphs, and Lists",
+                            "description":";Heading: Use headings to structure content hierarchically, making it easier to read and navigate.; Paragraphs: Keep paragraphs short and focused on a single idea or topic.; Lists: Use unordered lists for items without a specific order, and ordered lists for sequences or steps. Enter below for examples of Headings, Paragraphs, and Lists:",
+                            "resource": "heading_paragraph_list.html"
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 2,
+                    "lessonName": "Text Alignment and Styling",
+                    "content": [
+                        {
+                            "subtopic":"Text Alignment",
+                            "description":"Text alignment determines the horizontal positioning of text within its container. HTML and CSS allow you to align text to the left (default), right, center, or justify it.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Text Styling",
+                            "description":"Styling text involves changing its appearance to enhance readability or aesthetic appeal.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Combining Text Styles",
+                            "description":"HTML allows multiple text styles to be combined to achieve specific formatting effects.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Using CSS for Advanced Styling",
+                            "description":"While HTML provides basic styling elements, CSS (Cascading Style Sheets) allows for more advanced and flexible styling options. CSS can control fonts, sizes, line heights, letter spacing, and more, providing richer set of tools for text presentation.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Example",
+                            "description":"Enter below to explore examples of text alignment and styling.",
+                            "resource": "text_align_style.html"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contentId": 13,
+            "conentName": "Links and Navigation",
+            "sections": [
+                {
+                    "lessonNumber": 1,
+                    "lessonName": "Creating Links",
+                    "content": [
+                        {
+                            "subtopic":"Hyperlinks with `<a>` Tags",
+                            "description":"The `<a>` (anchor) tag is used in HTML to create hyperlinks, which allow users to navigate from one page to another or to different sections of the same page. Links are a fundamental part of the web, enabling the interconnected nature of web pages.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Basic Structure of an `<a>` Tag",
+                            "description":"The `<a>` tag requires the `href` attribute to define the destination of the link.; Syntax: <a href='URL_HERE'>Link Text</a>; `href` Attribute: Stands for 'Hyperlink Reference.' It specifies the URL of the page the link goes to.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Types of Links",
+                            "description":";1. Linking to an External Website: Takes the user to an external website (example.com) when clicked.; 2. LInking to a Different Page on the Same Website: Directs user to the '_NAME_' page of the same website.; 3. Linking to an Anchor Within the Same Page: Jump to a specific section (pointed to an element with the specified id) within the same page.; 4. Linking to an Email Address: Link that opens the user's email client to send an email.; 5. Opening Links in a New Tab: Use the `target='_blank'` attribute to open a link in a new tab.",
+                            "resource": "anchor_links.html"
+                        },
+                        {
+                            "subtopic":"Best Practices for Links",
+                            "description":";Descriptive Link Text: Use meaningful link text that clearly describes the destination, helping both users and search engines understand the link's purpose.; Avoid 'Click Here': Instead of vague phrases, use descriptive text like 'Read our FAQ' to improve accessibility and SEO.; Accessibility Considerations: Ensure that links are accessible to all users, including those using screen readers. Use clear and descriptive text and consider providing keybaord navigation options.",
+                            "resource": ""
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 2,
+                    "lessonName": "Navigation Menus",
+                    "content": [
+                        {
+                            "subtopic":"Structuring Navigation Using Links and Lists",
+                            "description":"Navigation menus are essential for guiding users through a website, allowing them to find content and pages easily. HTML provides several ways to structure navigation, often using lists (`<ul>` and `<li>`) combined with links (`<a>`)",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Basic Navigation Menu with Unordered Lists",
+                            "description":"1. Creating a Simple Navigation Menu; `<nav>` Tag: The `<nav>` element is used to wrap the primary navigation links, indicating a block of navigation links.; `<ul>` and `<li>` Tags: An unordered list (`<ul>`) is used to list the navigation items, with each item contained in a list item (`<li>`).\n 2. Styling a Navigation Menu with CSS; CSS Can be used to style the navigation menu, making it horizontal, vertical, or adding custom design. \n Enter below to view a simple Navigation Menu:",
+                            "resource": "simple_nav.html"
+                        },
+                        {
+                            "subtopic":"Types of Navigation Menus",
+                            "description":";Horizontal Navigation: Displays the menu items in a single row. Suitable for top navigation bars.; Vertical Navigation: Stacks menu items in a sinle column. Often used in sidebars or mobile menus.; Dropdown Menus: Provides a list of options that appear when hovering over or clicking a parent menu item.\n Explore Various Types of Navigation Below:",
+                            "resource": "navigations.html"
+                        },
+                        {
+                            "subtopic":"Accessibility Consideration for Navigation Menus",
+                            "description":";Keyboard Navigation: Ensure menus can be navigated using the keyboard, especially for dropdown menus.; ARIA Roles: Use ARIA roles and attributes to improve screen reader support.",
+                            "resource": "accessibility.html"
+                        },
+                        {
+                            "subtopic":"Best Practices for Navigation Menus",
+                            "description":";Consistency: Keep the navigation menu consistent across all pages to avoid confusing users.; Clear Labels: Use descriptive and straightforward labels for menu items.; Responsive Design: Ensure the navigation menu is responsive and adapts well to different screen sizes, especially for mobile devices.",
+                            "resource": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "contentId": 14,
+            "conentName": "Images and Multimedia",
+            "sections": [
+                {
+                    "lessonNumber": 1,
+                    "lessonName": "Embedding Images",
+                    "content": [
+                        {
+                            "subtopic":"Introduction to the `<img>` Tag",
+                            "description":"Images are an integral part of web content, helping to convey information visually and enhance the user experience. The `<img>` tag is used in HTML to embed images on a web page.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Basic Structure of the `<img>` Tag",
+                            "description":"The `<img>` tag is an empty (self-closing) tag that does not have a closing tag. It requires at least two attributes: `src` (source) and `alt` (alternative text).; <img src='URL' alt='Description of Image'>; `src` (Source) Attribute: Specifies the path to the image file. This can be an absolute URL (external source) or a relative URL (image within the website).; `alt` (Alternative Text) Attribute: Provides descriptive text for the image, which is displayed if the image cannot be loaded and is used by screen readers for accessibility.",
+                            "resource": ""
+                        },
+                        {
+                            "subtopic":"Responsive Images",
+                            "description":"To make images responsive, ensuring they scale according to the screen size, you can use CSS or HTML attributes.; 1. Use CSS to Make Images Responsive.; 2. Use `srcset` Attribute to specify different images for different screen resolutions or sizes. Can be used to improve loading times and visual quality.",
+                            "resource": ""
+                        }
+                        ,
+                        {
+                            "subtopic":"Examples",
+                            "description":"Enter below for image examples.",
+                            "resource": "images.html"
+                        }
+                    ]
+                },
+                {
+                    "lessonNumber": 2,
+                    "lessonName": "Navigation Menus",
+                    "content": [
+                        {
+                            "subtopic":"Structuring Navigatio",
+                            "description":"",
+                            "resource": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

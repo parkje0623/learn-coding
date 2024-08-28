@@ -1,0 +1,65 @@
+.lesson-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.lesson-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.lesson-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lesson-list-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.lesson-list-item-title {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.lesson-list-subtopic-container {
+    margin-top: 10px;
+}
+
+.lesson-list-subtopic-title {
+    font-size: 1.2rem;
+    color: #2980b9;
+    margin-bottom: 5px;
+}
+
+.lesson-list-subtopic-detail {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.detail-bullet-point-container {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.lesson-list-subtopic-resource {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.resourceLink:hover {
+    background-color: #2980b9;
+}
+

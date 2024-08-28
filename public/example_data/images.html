@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .large-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .responsive-image {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Embedding from Local Directory -->
+        <img src="/images/stardew.png" class="large-image" alt="A beautiful farm"><br>
+
+        <!-- External Source -->
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"  class="large-image" alt="Beutiful landscape"><br>
+
+        <!-- Specifying Dimension -->
+        <img src="/images/stardew.png" alt="A beautiful farm" width="50" height="50"><br>
+
+        <!-- Invalid src, Showing Alt Text -->
+        <img src="/images/stardew123.png" alt="A beautiful farm"><br>
+    
+        <!-- Responsive Image CSS Ex. -->
+        <img src="/images/stardew.png" class="responsive-image" alt="A beautiful farm"><br>
+
+        <!-- Responsive Image Srcset Ex. -->
+        <img src="/images/stardew.png"  
+        srcset="/images/CrossTheRoad.jpg 600w, /images/MazeGame.jpg 1200w"
+            class="responsive-image" 
+            alt="A beautiful farm">
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.preview-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-preview {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow: auto;
+}
+
+.left-preview pre {
+    white-space: 'pre-wrap';
+}
+
+.right-preview {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+    background-color: antiquewhite;
+}
+
+.right-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
